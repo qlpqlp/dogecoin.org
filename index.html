@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dogecoin.org - Do Only Good Everyday!</title>
+  <link rel="shortcut icon" sizes="256x256" href="https://dogecoin.com/assets/images/1.png" />
+
+  <!-- Google Font: Comic Neue -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">-->
+  <!--  <link rel="stylesheet" href="dist/css/adminlte.min.css">-->
+  <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="vendors/prism/prism.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+ <link rel=stylesheet type=text/css href=//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css type=text/css>
+ <link rel=stylesheet type=text/css href=//cdn.datatables.net/searchpanes/2.0.2/css/searchPanes.dataTables.min.css type=text/css>
+ <link rel=stylesheet type=text/css href=//cdn.datatables.net/select/1.4.0/css/select.dataTables.min.css type=text/css>
+ <link rel=stylesheet type=text/css href=//cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css type=text/css>
+ <link rel=stylesheet type=text/css href=//cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css type=text/css>
+  <!-- REQUIRED SCRIPTS -->
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <!-- AdminLTE App -->
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+  <script src="vendors/prism/prism.js"></script>
+  <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+  <!-- Load the element definition -->
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+  <script src=//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js></script>
+  <script type=text/javascript src=//cdn.datatables.net/v/dt/dt-1.10.18/r-2.2.2/rg-1.0.3/datatables.min.js></script>
+  <script src=//cdn.datatables.net/searchpanes/2.0.2/js/dataTables.searchPanes.min.js></script>
+  <script src=//cdn.datatables.net/select/1.4.0/js/dataTables.select.min.js></script>
+  <script src=//cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js></script>
+<style type="text/css">
+body{
+  font-family: "Comic Neue", cursive !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #343a40;
+}
+a{
+  color: #CC9900;
+  text-decoration: none;
+}
+a:hover{
+  color: #343a40;
+}
+.content-wrapper{
+ background-color: #FFFFFF;
+}
+
+.nav-link:hover{
+ color: #343a40;
+}
+.card{
+/*  min-height: 510px !important;*/
+}
+.nav-link{
+  color: #999999;
+}
+.nav-link:hover{
+  color: #999999;
+  font-weight: bold;
+}
+.card-title{
+ font-weight: bold;
+}
+.col {
+  min-width: 300px;
+}
+
+</style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<div class="wrapper">
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center" style="margin-top: -20px;">
+    <img class="animation__shake" src="img/codding.gif" alt="Dogecoin.org" height="161">
+    Loading...  </div>
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-light" style="padding-right: 15px !important">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i> Wow</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-heart"></i> Much Foundation</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link"><i class="fa-solid fa-location-dot"></i> So contacts</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Fetch" aria-label="Fetch">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-solid fa-chart-column"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown dropstart">
+        <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+          <i class="flag-icon flag-icon-gb"></i>
+        </a>
+        <div class="dropdown-menu dropdown p-0">
+          <a href="/index.html" class="dropdown-item active">
+            <i class="flag-icon flag-icon-gb mr-2"></i> English
+          </a>
+          <a href="/de/" class="dropdown-item ">
+            <i class="flag-icon flag-icon-de mr-2"></i> German
+          </a>
+          <a href="/fr/" class="dropdown-item ">
+            <i class="flag-icon flag-icon-fr mr-2"></i> French
+          </a>
+          <a href="/es/" class="dropdown-item ">
+            <i class="flag-icon flag-icon-es mr-2"></i> Spanish
+          </a>
+          <a href="/pt/" class="dropdown-item ">
+            <i class="flag-icon flag-icon-pt mr-2"></i> Português
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="theme-switch-wrapper nav-link">
+          <label class="theme-switch">
+            <input type="checkbox" class="btn-check" id="moon" autocomplete="off" style="display: none">
+            <i class="fa-solid fa-moon" for="moon" style="cursor: pointer"></i>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-light elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="https://dogecoin.com/assets/images/1.png" alt="Dogecoin" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">< Dogecoin.org ></span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Fetch" aria-label="Fetch">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-solid fa-code"></i>
+              <p>
+                Getting Started
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!--<li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Active Page</p>
+                </a>
+              </li>-->
+              <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon fas fa-solid fa-code-branch"></i><p>APIs / languages</p></a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon fas fa-solid fa-cubes"></i><p>learning blockchain</p></a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon fas fa-solid fa-right-to-bracket"></i><p>join a project</p></a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon fas fa-solid fa-users-viewfinder"></i><p>finding communities</p></a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon fas fa-solid fa-paw"></i><p>Dogecoin the movement</p></a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-list"></i>
+              <p>
+                Projects List
+                <span class="right badge text-bg-warning">420</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-solid fa-paw"></i>
+              <p>
+                Dogecoin Devs
+                <span class="right badge text-bg-light">6,900</span>
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid" style="padding: 35px">
+
+
+<div class="row">
+  <div class="col"><a href="https://dogecoin.com/dogeathon/" target="_blank"><img src="img/dogeathon_sticker.png" style="width: 100%" alt="Dogeathon" /></a></div>
+</div>
+
+<div class="row" style="padding-top: 35px">
+  <h2><i class="fa-solid fa-paw"></i> How to start?</h2>
+<div class="row shadow-sm p-3 mb-3 bg-body rounded" style="border-top: 3px solid #ffc107;">
+<div class="col">
+<div class="card mb-3" style="max-width: 540px;padding: 5px; min-height: 90%; border: none; box-shadow: none">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <span style="font-size: 6vw !important; color: #CCCCCC">1</span>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Find a problem</h5>
+        <p class="card-text" style="max-height: 100px; overflow: auto">Try to find an existent problem that with Dogecoin can be solved</p>
+        <p class="card-text"><small class="text-muted">tip: payment solution, electronic wallet, payment processor, etc.</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card mb-3" style="max-width: 540px;padding: 5px; min-height: 90%; border: none; box-shadow: none">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <span style="font-size: 6vw !important; color: #CCCCCC">2</span>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Learn</h5>
+        <p class="card-text" style="max-height: 100px; overflow: auto">Read all available docs on how to interact with the BlockChain</p>
+        <p class="card-text"><small class="text-muted">tip: LibDogecoin or GigaWallet could be a good start.</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card mb-3" style="max-width: 540px;padding: 5px; min-height: 90%; border: none; box-shadow: none">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <span style="font-size: 6vw !important; color: #CCCCCC">3</span>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Build</h5>
+        <p class="card-text" style="max-height: 100px; overflow: auto">Now that you foud a nich and how to interact, its time to code.</p>
+        <p class="card-text"><small class="text-muted">tip: see outher projects how they are coded.</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="row" style="padding-top: 35px">
+  <h2><i class="fa-solid fa-paw"></i> Feature Projects</h2>
+<div class="row shadow-sm p-3 mb-3 bg-body rounded" style="border-top: 3px solid #ffc107;">
+
+<div class="col">
+<div class="card mb-3" style="max-width: 540px;padding: 5px; min-height: 90%">
+  <div class="row g-0">
+    <div class="col-md-4" style="">
+      <img src="img/dogecoin.png" class="img-fluid rounded-start" alt="Dogecoin Core Wallet" style="min-width: 120px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Dogecoin Core Wallet</h5>
+        <p class="card-text" style="max-height: 100px; overflow: auto">The Dogecoin Core software allows anyone to operate a node in the Dogecoin blockchain..</p>
+        <p class="card-text"><small class="text-muted">by: dogecoin community <a href="https://github.com/dogecoin/dogecoin/" target="_blank"><i class="fa-brands fa-github"></i></a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card mb-3" style="max-width: 540px;padding: 5px; min-height: 90%">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/libdogecoin.png" class="img-fluid rounded-start" alt="LibDogecoin" style="min-width: 120px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">LibDogecoin</h5>
+        <p class="card-text" style="max-height: 100px; overflow: auto">A complete implementation of the Dogecoin Protocols, as a C library...</p>
+        <p class="card-text"><small class="text-muted">by: dogecoin foundation <a href="https://github.com/dogecoinfoundation/libdogecoin/" target="_blank"><i class="fa-brands fa-github"></i></a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card mb-3" style="max-width: 540px;padding: 5px; min-height: 90%">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/gigawallet.png" class="img-fluid rounded-start" alt="GigaWallet" style="min-width: 120px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">GigaWallet</h5>
+        <p class="card-text" style="max-height: 100px; overflow: auto">Is a backend service which provides a convenient integration API for platforms such as online shops, exchanges, social media platforms etc</p>
+        <p class="card-text"><small class="text-muted">by: dogecoin foundation <a href="https://github.com/foundation/gigawallet/" target="_blank"><i class="fa-brands fa-github"></i></a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+        <div class="row" style="padding-top: 35px">
+
+  <h2><i class="fa-solid fa-list-ul"></i> Project Listing</h2>
+<div class="col-12 shadow-sm p-3 mb-3 bg-body rounded" style="border-top: 3px solid #ffc107;">
+
+ <script type="text/javascript">
+  $(document).ready(function() {
+      $('#dogeprojectslist').DataTable( {
+          "order": [[ 0, "asc" ]],
+          responsive: true,
+    columnDefs: [
+        { responsivePriority: 1, targets: 0 },
+        { responsivePriority: 2, targets: -1 }
+    ]
+      } );
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+  } );
+
+</script>
+
+  <table id="dogeprojectslist" cellspacing="1" width="100%" style="border-color: #EEEEEE; text-align: left !important;" class="table table-striped display nowrap responsive">
+<thead>
+  <tr style="font-weight: bold">
+    <th data-priority="1"><i class="fa-solid fa-paw"></i> Project</th>
+    <th data-priority="1"><i class="fa-solid fa-gears"></i> Type</th>
+    <th data-priority="1"><i class="fa-solid fa-code"></i> Fetch</th>
+  </tr>
+</thead>
+<!-- start listing -->
+<tr>
+  <td style="vertical-align:middle;" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Dogecoin is a community-driven cryptocurrency that was inspired by a Shiba Inu meme. The Dogecoin Core software allows anyone to operate a node in the Dogecoin blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.">
+    <img src="img/dogecoin.png" alt="Dogecoin Core" style="height:30px;border-radius:50%;display:inline-flex;margin-right:20px"> Dogecoin Core <i class="fa-solid fa-circle-info"></i>
+  </td>
+  <td>
+<span class="badge rounded-pill bg-primary" style="margin:3px;float:left">Wallet</span>
+<span class="badge rounded-pill bg-light" style="margin:3px;float:left;background-color:#f90!important">API</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ff0!important">Opensource</span>
+<span class="badge rounded-pill bg-dark" style="margin:3px;float:left">Linux</span>
+<span class="badge rounded-pill bg-primary" style="margin:3px;float:left">Windows</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ff0!important">C++</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ccc!important">MacOS</span>
+  </td>
+  <td>
+    <div class="btn-group d-grid gap-2" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <span data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="wow" aria-label="wow">
+          <i class="fa-solid fa-graduation-cap"></i> </span> Learn More</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/dogecoin/dogecoin/"> <i class="fa-brands fa-github" aria-hidden="true"></i> Dogecoin Core</a></li>
+          </ul>
+      </div>
+    </div>
+   </td>
+</tr>
+<!-- end listing -->
+<!-- start listing -->
+<tr>
+  <td style="vertical-align:middle;" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Libdogecoin, a clean C library of Dogecoin building blocks">
+    <img src="img/libdogecoin.png" alt="LibDogecoin" style="height:30px;border-radius:50%;display:inline-flex;margin-right:20px"> LibDogecoin <i class="fa-solid fa-circle-info"></i>
+  </td>
+  <td>
+<span class="badge rounded-pill bg-primary" style="margin:3px;float:left">Lib</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ff0!important">Opensource</span>
+<span class="badge rounded-pill bg-dark" style="margin:3px;float:left">Linux</span>
+<span class="badge rounded-pill bg-primary" style="margin:3px;float:left">Windows</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ff0!important">C</span>
+<span class="badge rounded-pill bg-dark" style="margin:3px;float:left">Android</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ccc!important">MacOS</span>
+  </td>
+  <td>
+    <div class="btn-group d-grid gap-2" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <span data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="wow" aria-label="wow">
+          <i class="fa-solid fa-graduation-cap"></i> </span> Learn More</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/dogecoinfoundation/libdogecoin/"> <i class="fa-brands fa-github" aria-hidden="true"></i> LibDogecoin</a></li>
+          </ul>
+      </div>
+    </div>
+   </td>
+</tr>
+<!-- end listing -->
+<!-- start listing -->
+<tr>
+  <td style="vertical-align:middle;" tabindex="0" data-bs-toggle="tooltip" data-bs-title="he Dogecoin GigaWallet is a backend service which provides a convenient integration API for platforms such as online shops, exchanges, social media platforms etc, to transact Dogecoin on behalf of their users.">
+    <img src="img/gigawallet.png" alt="GigaWallet" style="height:30px;border-radius:50%;display:inline-flex;margin-right:20px"> GigaWallet <i class="fa-solid fa-circle-info"></i>
+  </td>
+  <td>
+<span class="badge rounded-pill bg-light" style="margin:3px;float:left;background-color:#f90!important">API</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ff0!important">Opensource</span>
+<span class="badge rounded-pill bg-dark" style="margin:3px;float:left">Linux</span>
+<span class="badge rounded-pill bg-primary" style="margin:3px;float:left">Windows</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ff0!important">go</span>
+<span class="badge rounded-pill bg-dark" style="margin:3px;float:left">Android</span>
+<span class="badge rounded-pill bg-light text-dark" style="margin:3px;float:left;background-color:#ccc!important">MacOS</span>
+  </td>
+  <td>
+    <div class="btn-group d-grid gap-2" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <span data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="wow" aria-label="wow">
+          <i class="fa-solid fa-graduation-cap"></i> </span> Learn More</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/dogecoinfoundation/gigawallet/"> <i class="fa-brands fa-github" aria-hidden="true"></i> GigaWallet</a></li>
+          </ul>
+      </div>
+    </div>
+   </td>
+</tr>
+<!-- end listing -->
+  </table>
+
+</div>
+
+                <!--<zero-md src="https://raw.githubusercontent.com/dogecoin/dogecoin/master/doc/getting-started.md"></zero-md> -->
+
+
+
+            </div>
+
+
+
+
+        </div>
+        <!-- /.row -->
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Dogecoin Today</h5>
+         <div class="col-lg-12 col-12">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>1 Ð = $0.69<sup style="font-size: 20px"></sup></h3>
+
+                <p>Doge Price (USD)</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-chart-column"></i>
+              </div>
+            </div>
+          </div>
+         <div class="col-lg-12 col-12">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>6103286<sup style="font-size: 20px"></sup></h3>
+
+                <p>Doge Difficulty</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-calculator"></i>
+              </div>
+            </div>
+          </div>
+         <div class="col-lg-12 col-12">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>69<sup style="font-size: 20px"></sup></h3>
+
+                <p>Meme Pool</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+            </div>
+          </div>
+         <div class="col-lg-12 col-12">
+            <!-- small box -->
+            <div class="small-box bg-primary">
+              <div class="inner">
+                <h3>420<sup style="font-size: 20px"></sup></h3>
+
+                <p>Dogecoin Projects</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+          </div>
+         <div class="col-lg-12 col-12">
+            <!-- small box -->
+            <div class="small-box bg-primary">
+              <div class="inner">
+                <h3>5<sup style="font-size: 20px"></sup></h3>
+
+                <p>Dogecoin Sponsors</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-hand-spock"></i>
+              </div>
+            </div>
+          </div>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      V 0.1
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2013-2022 <a href="https://dogecoin.org">Dogecoin</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+
+
+<script>
+
+
+  var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  var currentTheme = localStorage.getItem('theme');
+  var mainHeader = document.querySelector('.main-header');
+
+  if (currentTheme) {
+    if (currentTheme === 'dark') {
+      if (!document.body.classList.contains('dark-mode')) {
+        document.body.classList.add("dark-mode");
+      }
+      if (mainHeader.classList.contains('navbar-light')) {
+        mainHeader.classList.add('navbar-dark');
+        mainHeader.classList.remove('navbar-light');
+      }
+      toggleSwitch.checked = true;
+    }
+  }
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      if (!document.body.classList.contains('dark-mode')) {
+        document.body.classList.add("dark-mode");
+      }
+      if (mainHeader.classList.contains('navbar-light')) {
+        mainHeader.classList.add('navbar-dark');
+        mainHeader.classList.remove('navbar-light');
+      }
+      localStorage.setItem('theme', 'dark');
+    } else {
+      if (document.body.classList.contains('dark-mode')) {
+        document.body.classList.remove("dark-mode");
+      }
+      if (mainHeader.classList.contains('navbar-dark')) {
+        mainHeader.classList.add('navbar-light');
+        mainHeader.classList.remove('navbar-dark');
+      }
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+</body>
+</html>
